@@ -1,4 +1,4 @@
-FROM debian-shibboleth-sp:debian9-shibboleth2.6
+FROM uazlibraries/debian-shibboleth-sp:debian9-shibboleth2.6
 
 # Make apt-get commands temporarily non-interactive
 # Solution from https://github.com/phusion/baseimage-docker/issues/58
