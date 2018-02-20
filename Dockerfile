@@ -7,7 +7,7 @@ RUN \
 export DEBIAN_FRONTEND=noninteractive && \
 export DEBCONF_NONINTERACTIVE_SEEN=true && \
 apt-get update && \
-apt-get install -y supervisor && \
+apt-get install -y supervisor libcgi-fast-perl ruby-fcgi python-fcgi && \
 apt-get clean
 
 COPY supervisor/shibboleth.conf /etc/supervisor/conf.d/
